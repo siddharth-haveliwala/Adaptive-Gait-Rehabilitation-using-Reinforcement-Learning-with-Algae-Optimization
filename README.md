@@ -102,3 +102,12 @@ After evaluation, the `shap_explain.py` script can be executed (requires slight 
 
 ## 📄 License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+## References
+
+1. [The OU-ISIR Gait Database Comprising the Treadmill Dataset](https://git-disl.github.io/GTDLBench/datasets/mnist_datasets/)
+2. [Reward-Adaptive Reinforcement Learning: Dynamic Policy Gradient Optimization for Bipedal Locomotion](https://arxiv.org/pdf/2107.01908.pdf)
+3. [A Data-Driven Reinforcement Learning Solution Framework for Optimal and Adaptive Personalization of a Hip Exoskeleton](https://arxiv.org/ftp/arxiv/papers/2011/2011.06116.pdf)
+4. [Static Standing Balance with Musculoskeletal Models Using PPO With Reward Shaping](https://tinyurl.com/mvktmf7z)
+5. [A Novel Deep Reinforcement Learning Based Framework for Gait Adjustment](https://arxiv.org/pdf/2107.01908.pdf)
+6. [Challenges with Reinforcement Learning in Prosthesis](https://www.mdpi.com/2227-7390/11/1/178)
