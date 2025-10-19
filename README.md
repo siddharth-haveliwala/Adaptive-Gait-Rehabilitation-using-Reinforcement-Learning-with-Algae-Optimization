@@ -1,18 +1,18 @@
 # Adaptive Gait Rehabilitation using Reinforcement Learning & Algae Method
 
-## 🧠 Project Overview
+## Project Overview
 
 Gait rehabilitation is a vital area of medical research, dedicated to restoring and enhancing mobility for people with lower-limb impairments. While conventional aids like exoskeletons offer support, they are limited by their need for manual tuning and their inability to truly adapt to a user's changing needs. **Reinforcement Learning (RL)** offers a powerful solution, enabling the creation of intelligent control systems that can make real-time, context-aware adjustments during rehabilitation.
 
 This project advances that capability by presenting a **hybrid RL framework**. It utilizes a **Convolutional Neural Network (CNN)** as its policy backbone, trains it using **Proximal Policy Optimization (PPO)** principles, and, crucially, incorporates a population-based genetic approach (the **Algae Method**). This integration is designed to build a highly adaptable and robust RL system that can learn from and tailor control strategies to the unique requirements of each patient, promising significantly enhanced gait rehabilitation outcomes.
 
-## 🚀 Key Features
+## Key Features
 * **AlgaePPO Framework:** Population-based reinforcement learning strategy with **evolutionary principles** (crossover and mutation) for policy optimization.
 * **Custom CNN Policy:** A deep learning model designed to process $128 \times 128$ grayscale images of gait data.
 * **Interpretability with SHAP:** Utilizes **SHAP (SHapley Additive exPlanations)** to explain the model's predictions, crucial for trustworthy application in a medical domain.
 * **Modular Design:** Separated components for data handling, model architecture, training, and evaluation.
 
-## ⚙️ Project Structure
+## Project Structure
 
 | File | Description |
 | :--- | :--- |
@@ -23,7 +23,7 @@ This project advances that capability by presenting a **hybrid RL framework**. I
 | `shap_explain.py` | Utility for generating and visualizing **SHAP values** for model interpretability. |
 | `train_evaluate.py` | Helper functions for advanced evaluation metrics, including **ROC/AUC curve plotting** and standard training loops (currently unused in `main.py` but available for future expansion). |
 
-## 🛠️ Installation and Setup
+## Installation and Setup
 
 1.  **Clone the Repository:**
     ```bash
@@ -52,7 +52,7 @@ This project advances that capability by presenting a **hybrid RL framework**. I
     └── ... (for 80_Percent, 100_Percent)
     ```
 
-## ▶️ How to Run
+## Execution of the Project
 
 1.  **Methodology:**
 
@@ -82,7 +82,7 @@ This project advances that capability by presenting a **hybrid RL framework**. I
     Execute the main script. This will train the 3 models for 50 episodes, plot the accuracy, save the best model, and run a final evaluation.
     ```bash python main.py```
    
-## 📊 Results and Interpretability
+## Results and Interpretability
 
 The training process is logged to the console, and a `Accuracy vs Episodes` plot is generated.
 
@@ -100,7 +100,7 @@ After evaluation, the `shap_explain.py` script can be executed (requires slight 
 - **NAC Values:** The optimal shift value was found to be 69, with an NAC value close to 0.975, indicating a stable and consistent gait cycle.
 - **Test Accuracy:** Consistently improving test accuracy across epochs, reaching perfect accuracy, with SHAP analysis providing insights into model decision-making.
 
-## 📄 License
+## License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 ## References
